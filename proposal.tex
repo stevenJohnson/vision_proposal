@@ -1,0 +1,121 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage{cvpr}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=true,bookmarksnumbered=true,hypertexnames=false,linkbordercolor={0 0 1}]{hyperref}
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+%\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\cvprfinalcopy % *** Uncomment this line for the final submission
+
+\def\cvprPaperID{****} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+\ifcvprfinal\pagestyle{empty}\fi
+%\setcounter{page}{1}
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{Dynamical Models for Instruction Completion \\and Error Recognition for NASA Physical Procedures}
+
+\author{Steven Johnson\\
+Department of Computer Sciences\\
+University of Wisconsin--Madison\\
+{\tt\small sjj@cs.wisc.edu}
+
+\and
+
+Ronak Mehta\\
+Department of Computer Sciences\\
+University of Wisconsin-Madison\\
+{\tt\small ronakrm@cs.wisc.edu}
+}
+
+\maketitle
+
+\begin{abstract}
+TODO::: Describe the goal of the project, the data/device as well as which techniques you plan to use.
+
+\end{abstract}
+
+\section{Introduction}
+
+Procedures are the accepted means to operate a spacecraft system or systems to perform specific functions, and consequently are at the heart of all NASA human spaceflight operations~\cite{kortenkamp2008procedure}. A procedure is a detailed set of instructions specifying how a piece of equipment is operated or a task is performed~\cite{frank2010plans}. They are often written to be very general and to cover numerous contingencies. Procedures to operate a class of equipment (e.g., smoke detector) will differ based on make, while procedures to operate a piece of equipment will have conditional or optional steps based on configuration. As an additional complication, constraints of some procedures may be highly conditional, discretionary, or unordered. At the same time, there may be external constraints that limit how a procedure must be executed, and these constraints are not made explicit. The outcomes of NASA missions rely on crew members properly executing a multitude of these complex procedures, making procedure execution support and monitoring a critical factor that can determine success or failure measured both in terms of monetary costs as well as preventing loss of life.
+
+There is a body of prior NASA work focused on monitoring the progress of procedures that are not physical. For instance, when instructions to systems of the ISS are sent from ground, the application ThinLayer highlights commands as they are executed to show procedure progress~\cite{frank2010plans}. IPV itself also allows for manually tracking procedure progress for a crew person onboard ISS. However, to date there is little work from NASA in the realm of tracking execution status of physical procedures where crew members are manually manipulating physical objects, such as during maintenance tasks. Our goal with this project is to develop a method to computationally model a procedure to enable tracking of the execution of its steps and detection of crew errors during execution.
+
+The inputs to our system will be a set of videos of users correctly executing one procedure (an exercise equipment maintenance task) recorded from a head-mounted egocentric camera. Using this set of videos, we will develop a technique for learning a dynamical model of the procedure that extends current methods by incorporating domain knowledge from the provided procedure documentation. We will then evaluate the model on a set of videos which are both correct and contain errors to determine the accuracy of error detection and overall instruction segmentation.
+
+\begin{figure}[th]
+\begin{center}
+ \includegraphics[width=0.4\linewidth]{fig/bucky1.jpg} 
+\includegraphics[width=0.4\linewidth]{fig/bucky2.jpg}
+\end{center}
+   \caption{Example of caption.  My project rocks.}
+\label{fig:teaser}
+ 
+\end{figure}
+
+ 
+ \section{Related Work}
+
+Discuss related work to your project, give those references here \cite{Alpher03,Alpher04,Authors06}. 
+
+Briefly describe what is done in each reference, what are their limitations, and what you will do differently.
+ 
+ 
+ 
+ 
+\section{Problem Description and Techniques You Want to Use}
+
+Describe your project goal in detail. You are also encouraged to apply computer vision techniques on the open problems
+in your own research areas.
+
+Outline techniques you plan to use for your problem.
+
+\section{Experimental Evaluation}
+ 
+
+Describe the data you plan to use, the baselines you want to compare (if applicable), and the evaluation metric.
+
+If you plan to use some special equipment, mention it here.   We may be able to help with servers, extra cameras, etc.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+Method & Frobnability \\
+\hline\hline
+Theirs & Frumpy \\
+Yours & Frobbly \\
+Ours & Makes one's heart Frob\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Results.   Ours is better.}
+\end{table}
+
+ 
+\section{Conclusion and Discussion}
+ 
+Breakdown--what will each team-member do? Time-line of your project? Ideally, everyone should do something imaging/vision related (it's not good for one team member to focus purely on user-interface, for instance).
+
+You full proposal should be two pages excluding references using this template.
+
+\clearpage
+
+{\small
+\bibliographystyle{ieee}
+\bibliography{proposal}
+}
+
+\end{document}
