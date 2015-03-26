@@ -1,5 +1,17 @@
 \begin{thebibliography}{1}\itemsep=-1pt
 
+\bibitem{castel1996going}
+C.~Castel, L.~Chaudron, and C.~Tessier.
+\newblock What is going on? a high level interpretation of sequences of images.
+\newblock In {\em ECCV Workshop on Conceptual Descriptions from Images}, pages
+  13--27, 1996.
+
+\bibitem{fathi2011understanding}
+A.~Fathi, A.~Farhadi, and J.~M. Rehg.
+\newblock Understanding egocentric activities.
+\newblock In {\em Computer Vision (ICCV), 2011 IEEE International Conference
+  on}, pages 407--414. IEEE, 2011.
+
 \bibitem{frank2010plans}
 J.~Frank.
 \newblock When plans are executed by mice and men.
@@ -11,5 +23,38 @@ D.~Kortenkamp, R.~P. Bonasso, D.~Schreckenghost, K.~M. Dalal, V.~Verma, and
 \newblock A procedure representation language for human spaceflight operations.
 \newblock In {\em Proceedings of the 9th International Symposium on Artificial
   Intelligence, Robotics and Automation in Space (i-SAIRAS-08)}, 2008.
+
+\bibitem{le2011learning}
+Q.~V. Le, W.~Y. Zou, S.~Y. Yeung, and A.~Y. Ng.
+\newblock Learning hierarchical invariant spatio-temporal features for action
+  recognition with independent subspace analysis.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
+  Conference on}, pages 3361--3368. IEEE, 2011.
+
+\bibitem{petri1966communication}
+C.~A. Petri.
+\newblock Communication with automata.
+\newblock 1966.
+
+\bibitem{starner1998real}
+T.~Starner, J.~Weaver, and A.~Pentland.
+\newblock Real-time american sign language recognition using desk and wearable
+  computer based video.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 20(12):1371--1375, 1998.
+
+\bibitem{turaga2008machine}
+P.~Turaga, R.~Chellappa, V.~S. Subrahmanian, and O.~Udrea.
+\newblock Machine recognition of human activities: A survey.
+\newblock {\em Circuits and Systems for Video Technology, IEEE Transactions
+  on}, 18(11):1473--1488, 2008.
+
+\bibitem{yamato1992recognizing}
+J.~Yamato, J.~Ohya, and K.~Ishii.
+\newblock Recognizing human action in time-sequential images using hidden
+  markov model.
+\newblock In {\em Computer Vision and Pattern Recognition, 1992. Proceedings
+  CVPR'92., 1992 IEEE Computer Society Conference on}, pages 379--385. IEEE,
+  1992.
 
 \end{thebibliography}

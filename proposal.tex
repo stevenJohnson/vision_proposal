@@ -31,9 +31,7 @@
 Department of Computer Sciences\\
 University of Wisconsin--Madison\\
 {\tt\small sjj@cs.wisc.edu}
-
 \and
-
 Ronak Mehta\\
 Department of Computer Sciences\\
 University of Wisconsin-Madison\\
@@ -55,32 +53,25 @@ There is a body of prior NASA work focused on monitoring the progress of procedu
 
 The inputs to our system will be a set of videos of users correctly executing one procedure (an exercise equipment maintenance task) recorded from a head-mounted egocentric camera. Using this set of videos, we will develop a technique for learning a dynamical model of the procedure that extends current methods by incorporating domain knowledge from the provided procedure documentation. We will then evaluate the model on a set of videos which are both correct and contain errors to determine the accuracy of error detection and overall instruction segmentation.
 
-\begin{figure}[th]
-\begin{center}
- \includegraphics[width=0.4\linewidth]{fig/bucky1.jpg} 
-\includegraphics[width=0.4\linewidth]{fig/bucky2.jpg}
-\end{center}
-   \caption{Example of caption.  My project rocks.}
-\label{fig:teaser}
- 
-\end{figure}
+\section{Related Work}
 
- 
- \section{Related Work}
+Significant work has been done in the field of human action and activity recognition. In \cite{turaga2008machine}, Turaga presents a comprehensive overview of this work in detail. In most work, activity recognition is identified as the sum of \emph{actions} performed in a temporal ordering. Parametric models, particularly Hidden Markov Models, have been used with success in many applications. \cite{yamato1992recognizing} employ them to identify whole-body tennis swings. Using background subtraction, they are able to identify the actor in the scene, and learn a model based on how the actor alone is moving over time.
 
-Discuss related work to your project, give those references here \cite{Alpher03,Alpher04,Authors06}. 
+Closer to our domain, \cite{starner1998real} use two real-time HMMs to identify American Sign Language using an ego-centric camera with high accuracy. 
+	
+In order to properly specify the given task, it is necessary to maintain several levels of abstraction to gain an overall representation of the procedure. It is intuitive to use three levels: task, activity, and actions where the task is the overall goal of the procedure, activity is the sub-activities making up the task, and actions are the lowest level for each activity. To this end, Petri Nets\cite{petri1966communication} are an obvious choice, given the parallel drawn between actions on an object, and transition actions which change the state of the object. 
 
-Briefly describe what is done in each reference, what are their limitations, and what you will do differently.
- 
- 
- 
- 
+In order to provide action transitions, a proper representation of the action must be attained. Feature extraction must be performed to determine object representation at a low-level. \cite{fathi2011understanding} describe a method in which to identify objects as well as some coarse actions which aid in object identification. Given the object representation, we can use a Hidden Markov Model (HMM) to determine the likely action based on the objects in frame and the current action state. This provides a spatio-temporal model in which to classify the low-level actions making up the activity level Petri Nets.
+
+The entire representation of a task as a whole is broken up into two overall levels: a Petri Net level to provide a framework for probable next actions, and a Hidden Markov Model with underlying feature representation to define low-level activities. We combine both levels to address the shortcomings of each. Petri Nets tend to only allow for more abstract actions and are difficult to train, while HMMs are more limited to recognition of a specific action and can't maintain an overall sense of the state of the task as a whole.
+  
 \section{Problem Description and Techniques You Want to Use}
 
-Describe your project goal in detail. You are also encouraged to apply computer vision techniques on the open problems
-in your own research areas.
+While our project falls in the general space of activity recognition, our specific task includes key domain knowledge that we plan to leverage. Most of the work mentioned above describes tasks in which a single body is in motion against a known background with a fixed camera. Here, an ego-centric camera is used, and tasks involve the manipulation of objects within the scene. Not only is it necessary to be able to distinguish the action currently taken place, but objects in the space must be tracked as they are being manipulated. These objects may be occluded, combined, or separated throughout the task. A key part of our project will be creating a strong feature representation to extract from the raw video. \cite{starner1998real} provide us with a strong starting point, as they use prior information about relevant objects in the scene that allow them to quickly extract these objects from irrelevant background. 
 
-Outline techniques you plan to use for your problem.
+Once a feature representation has been extracted, a model must be created that will allow us to learn the task in question. There has been some previous work on temporal modeling of time-variant tasks as mentioned above, but with mediocre success. Again, we will use \cite{starner1998real} as our starting point, given the similar underlying task. Here is where we attempt to incorporate our domain knowledge, in the hope that we may be able to create a stronger model.
+
+Our higher level activity recognition may require a significantly different model than that used for the lower-level action recognition. Because each "activity" may be correct or incorrect, and may occur in different temporal orderings, a model that incorporates logic will be necessary. Petri-Nets have been used by \cite{castel1996going}, because of their natural representation of sequencing, parallelism, and synchronization. All of these will prove to be valuable in our domain, and may allow us to better model the nature of step-by-step assembly.
 
 \section{Experimental Evaluation}
  
@@ -88,21 +79,6 @@ Outline techniques you plan to use for your problem.
 Describe the data you plan to use, the baselines you want to compare (if applicable), and the evaluation metric.
 
 If you plan to use some special equipment, mention it here.   We may be able to help with servers, extra cameras, etc.
-
-\begin{table}
-\begin{center}
-\begin{tabular}{|l|c|}
-\hline
-Method & Frobnability \\
-\hline\hline
-Theirs & Frumpy \\
-Yours & Frobbly \\
-Ours & Makes one's heart Frob\\
-\hline
-\end{tabular}
-\end{center}
-\caption{Results.   Ours is better.}
-\end{table}
 
  
 \section{Conclusion and Discussion}

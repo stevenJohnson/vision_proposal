@@ -1,50 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2013)
+This is BibTeX, Version 0.99d (TeX Live 2011)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: proposal.aux
 The style file: ieee.bst
 Database file #1: proposal.bib
-Warning--I didn't find a database entry for "Alpher03"
-Warning--I didn't find a database entry for "Alpher04"
-Warning--I didn't find a database entry for "Authors06"
-You've used 2 entries,
+Warning--empty journal in petri1966communication
+You've used 9 entries,
             2120 wiz_defined-function locations,
-            515 strings with 4209 characters,
-and the built_in function-call counts, 781 in all, are:
-= -- 71
-> -- 40
-< -- 1
-+ -- 17
-- -- 14
-* -- 51
-:= -- 131
-add.period$ -- 7
-call.type$ -- 2
-change.case$ -- 13
+            551 strings with 5615 characters,
+and the built_in function-call counts, 3780 in all, are:
+= -- 383
+> -- 165
+< -- 5
++ -- 66
+- -- 56
+* -- 252
+:= -- 584
+add.period$ -- 31
+call.type$ -- 9
+change.case$ -- 55
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 33
-empty$ -- 65
-format.name$ -- 14
-if$ -- 166
+cite$ -- 10
+duplicate$ -- 157
+empty$ -- 304
+format.name$ -- 56
+if$ -- 829
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 20
+int.to.str$ -- 9
+missing$ -- 9
+newline$ -- 48
+num.names$ -- 18
+pop$ -- 72
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 46
 quote$ -- 0
-skip$ -- 19
+skip$ -- 114
 stack$ -- 0
-substring$ -- 30
-swap$ -- 9
-text.length$ -- 1
+substring$ -- 255
+swap$ -- 55
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
-warning$ -- 0
-while$ -- 7
-width$ -- 3
-write$ -- 24
-(There were 3 warnings)
+type$ -- 36
+warning$ -- 1
+while$ -- 37
+width$ -- 10
+write$ -- 102
+(There was 1 warning)
