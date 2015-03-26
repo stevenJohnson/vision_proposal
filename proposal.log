@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.9.8)  26 MAR 2015 16:06
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.9.8)  26 MAR 2015 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -408,37 +408,37 @@ LaTeX Info: Redefining \nameref on input line 25.
 \openout3 = `proposal.out'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
-LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+LaTeX Font Info:    Try loading font information for U+msa on input line 47.
 
 (/afs/cs.wisc.edu/s/texlive-2011/amd64_rhel5/texmf-dist/tex/latex/amsfonts/umsa
 .fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+LaTeX Font Info:    Try loading font information for U+msb on input line 47.
 
 (/afs/cs.wisc.edu/s/texlive-2011/amd64_rhel5/texmf-dist/tex/latex/amsfonts/umsb
 .fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 42.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 47.
 
 (/afs/cs.wisc.edu/s/texlive-2011/amd64_rhel5/texmf-dist/tex/latex/psnfss/ot1pcr
 .fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -10.0pt
-(hyperref)                removed on input line 48.
+(hyperref)                removed on input line 53.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -10.0pt
-(hyperref)                removed on input line 56.
+(hyperref)                removed on input line 61.
 
 [1
 
@@ -447,69 +447,54 @@ pdftex.map}]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -10.0pt
-(hyperref)                removed on input line 68.
+(hyperref)                removed on input line 73.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -10.0pt
-(hyperref)                removed on input line 76.
+(hyperref)                removed on input line 81.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern -10.0pt
-(hyperref)                removed on input line 84.
+(hyperref)                removed on input line 89.
 
 [2] (./proposal.bbl (./proposal.brf)
 \tf@brf=\write4
 \openout4 = `proposal.brf'.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
  [3
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
  (./proposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
-
-
-Package rerunfilecheck Warning: File `proposal.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `proposal.out':
-(rerunfilecheck)             Before: B8A09E934C3C079858A4AE09186CE7F4;317
-(rerunfilecheck)             After:  B69CE90CB4390F5FC0C305DEE650C054;317.
-
-Package rerunfilecheck Warning: File `proposal.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `proposal.brf':
-(rerunfilecheck)             Before: FD2CC9510FFBDD9427974F5C3A0E8B47;591
-(rerunfilecheck)             After:  522D140CA09202E567B0B0D26F87002F;545.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
+Package rerunfilecheck Info: File `proposal.out' has not changed.
+(rerunfilecheck)             Checksum: B69CE90CB4390F5FC0C305DEE650C054;317.
+Package rerunfilecheck Info: File `proposal.brf' has not changed.
+(rerunfilecheck)             Checksum: CF90FAC675BB00BEBB70103261B37FE5;545.
  ) 
 Here is how much of TeX's memory you used:
- 6240 strings out of 493629
- 91894 string characters out of 3134964
- 175783 words of memory out of 3000000
+ 6239 strings out of 493629
+ 91885 string characters out of 3134964
+ 174783 words of memory out of 3000000
  9430 multiletter control sequences out of 15000+200000
  22096 words of font info for 52 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 34i,7n,30p,1233b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section.6} has been referenced but does not exist
-, replaced by a fixed one
-
-{/afs/cs.wisc.edu/s/texlive-2011/amd64_rhel5/texmf-dist/fonts/enc/dvips/base/8r
-.enc}</afs/cs.wisc.edu/s/texlive-2011/amd64_rhel5/texmf-dist/fonts/type1/urw/co
-urier/ucrr8a.pfb></afs/cs.wisc.edu/s/texlive-2011/amd64_rhel5/texmf-dist/fonts/
-type1/urw/times/utmb8a.pfb></afs/cs.wisc.edu/s/texlive-2011/amd64_rhel5/texmf-d
-ist/fonts/type1/urw/times/utmr8a.pfb></afs/cs.wisc.edu/s/texlive-2011/amd64_rhe
-l5/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (3 pages, 66409 bytes).
+ 34i,7n,30p,1233b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/afs/cs.wisc.edu/s/texlive-2011/amd64_rhel5/texmf-dist/fonts/enc/dvips/base/
+8r.enc}</afs/cs.wisc.edu/s/texlive-2011/amd64_rhel5/texmf-dist/fonts/type1/urw/
+courier/ucrr8a.pfb></afs/cs.wisc.edu/s/texlive-2011/amd64_rhel5/texmf-dist/font
+s/type1/urw/times/utmb8a.pfb></afs/cs.wisc.edu/s/texlive-2011/amd64_rhel5/texmf
+-dist/fonts/type1/urw/times/utmr8a.pfb></afs/cs.wisc.edu/s/texlive-2011/amd64_r
+hel5/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on proposal.pdf (3 pages, 66653 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 92 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
