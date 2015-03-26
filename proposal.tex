@@ -46,7 +46,7 @@ University of Wisconsin-Madison\\
 \maketitle
 
 \begin{abstract}
-TODO::: Describe the goal of the project, the data/device as well as which techniques you plan to use.
+Methods have been proposed and implemented for a variety of action and activity recognition tasks. At a larger scale, however, there has been little work on evaluating a high-level task as its individual actions are being performed. Here, we propose a method of tracking both an action being performed and its temporal location in the overall activity, using a novel combination of Hidden Markov Models and Petri Nets. We implement our method in the context of instruction completion, where someone may be performing a task being observed with an egocentric camera.
 
 \end{abstract}
 
@@ -60,9 +60,7 @@ The inputs to our system will be a set of videos of users correctly executing on
 
 \section{Related Work}
 
-Significant work has been done in the field of human action and activity recognition. In \cite{turaga2008machine}, Turaga presents a comprehensive overview of this work in detail. In most work, activity recognition is identified as the sum of \emph{actions} performed in a temporal ordering. Parametric models, particularly Hidden Markov Models, have been used with success in many applications. \cite{yamato1992recognizing} employ them to identify whole-body tennis swings. Using background subtraction, they are able to identify the actor in the scene, and learn a model based on how the actor alone is moving over time.
-
-Closer to our domain, \cite{starner1998real} use two real-time HMMs to identify American Sign Language using an ego-centric camera with high accuracy. 
+Significant work has been done in the field of human action and activity recognition. In \cite{turaga2008machine}, Turaga presents a comprehensive overview of this work in detail. In most work, activity recognition is identified as the sum of \emph{actions} performed in a temporal ordering. Parametric models, particularly Hidden Markov Models, have been used with success in many action recognition applications. \cite{yamato1992recognizing} employ them to identify whole-body tennis swings. Using background subtraction, they are able to identify the actor in the scene, and learn a model based on how the actor alone is moving over time. The particular advantage of HMMs in the field of vision lies in their efficiency in modeling time-sequential data. Here, we also have no knowledge of the state except through our extracted features, which fits well into the unobserved state representation of HMMs.
 	
 In order to properly specify the given task, it is necessary to maintain several levels of abstraction to gain an overall representation of the procedure. It is intuitive to use three levels: task, activity, and actions where the task is the overall goal of the procedure, activity is the sub-activities making up the task, and actions are the lowest level for each activity. To this end, Petri Nets\cite{petri1966communication} are an obvious choice, given the parallel drawn between actions on an object, and transition actions which change the state of the object. 
 
@@ -87,10 +85,8 @@ If you plan to use some special equipment, mention it here.   We may be able to 
 
  
 \section{Conclusion and Discussion}
- 
-Breakdown--what will each team-member do? Time-line of your project? Ideally, everyone should do something imaging/vision related (it's not good for one team member to focus purely on user-interface, for instance).
 
-You full proposal should be two pages excluding references using this template.
+Currently, work will be distributed evenly across all three components of the project: feature extraction, action modeling, and activity modeling. We will initially start with concurrent work on the feature extraction and activity modeling components. Once feature extraction is complete, action modeling with HMMs will be implemented. Data will be collected during this period, and integration between action and activity modeling will be the final step.
 
 \clearpage
 
