@@ -78,11 +78,9 @@ Our higher level activity recognition may require a significantly different mode
 
 \section{Experimental Evaluation}
  
+Because of the difficulty in gathering training data, we will focus our efforts for modeling and evaluation to a single task instance of an exercise equipment verification task. This task was selected because it is similar to many tasks executed by actual crew members on ISS. The experimental data will be gathered by recruiting participants to wear a Google Glass device loaded with an application to guide them through the task. One of the authors has access to the resources necessary to gather the data. Thus, we will obtain many egocentric videos of a user executing the entire task. We will hand-segment each of these recordings according to the actions we define from the procedure document and are encoded in our petri net, and an HMM will be constructed from each of these actions.
 
-Describe the data you plan to use, the baselines you want to compare (if applicable), and the evaluation metric.
-
-If you plan to use some special equipment, mention it here.   We may be able to help with servers, extra cameras, etc.
-
+Our evaluation will be twofold: we wish to both verify that the models we generate are able to identify when actions are completed in a video we did not use in the training set, and additionally we wish to see if the model can detect errors in a new video which includes errors. To do the first part, for each video, we will train the model on all of the training data except for that video, and we will then examine the action segmentation results of evaluating the model on that video. Hopefully we will see accurate detection of the completion of actions. For the second part, we will require additional videos, some of which contain errors in the task. We will evaluate the model on this set of videos, hopefully seeing accurate (and timely) detection of errors in the videos which contain errors and not see false positives in the videos which are error-free.
  
 \section{Conclusion and Discussion}
 
